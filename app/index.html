@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/servers.css">
+	<link rel="stylesheet" type="text/css" href="style/scroll.css">
+	<link rel="stylesheet" type="text/css" href="style/modal.css">
+	<title>Jedi</title>
+</head>
+<body>
+<header class="mid">
+	<div>Jedi academy server browser</div>
+</header>
+<main>
+	<div class="menu">
+		<div class="get-list hover">
+			Get New List
+		</div>
+		<div class="filters">
+			<div class="cell">
+				<div class="filter" data-filter="game"><div class="name">Game:</div><div class="val">All</div></div>
+				<div class="filter" data-filter="type"><div class="name">Type:</div><div class="val">All</div></div>
+			</div>
+			<div class="cell">
+				<div class="filter" data-filter="empty"><div class="name">View Empty:</div><div class="val">Yes</div></div>
+				<div class="filter" data-filter="full"><div class="name">View Full:</div><div class="val">Yes</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="servers">
+		<div class="thead">
+			<div class="tr">
+				<div class="td hover name" data-head="hostname">Server Name</div>
+				<div class="td hover map" data-head="mapname">Map Name</div>
+				<div class="td hover players" data-head="clients">Plyrs</div>
+				<div class="td hover type" data-head="gameType">Type</div>
+			</div>
+		</div>
+		<div class="tbody"></div>
+	</div>
+</main>
+
+<div class="modal">
+	<div class="body">
+		<header class="mid">
+			<div>Server information</div>
+		</header>
+		<div class="status"></div>
+		<footer class="mid">
+			<div class="refresh hover">Refresh</div><div class="hide-status hover">Done</div>
+		</footer>
+	</div>
+</div>
+
+<footer class="mid">
+	<div class="exit hover">
+		Exit
+	</div>
+</footer>
+<script>
+	require('./app.js');
+</script>
+</body>

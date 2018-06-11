@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0; border: none; box-sizing: border-box;}
+
+@font-face {font-family: 'Ergoe';
+	src: url('../fonts/Ergoe Extrabold.ttf');
+}
+
+@font-face {font-family: 'anewhope';
+	src: url('../fonts/anewhope.ttf');
+}
+
+@keyframes bl {
+	50% { opacity: 0.7; }
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Ergoe;
+	font-size: 22px;
+	-webkit-font-smoothing: antialiased;
+	background: url('../images/main_background.png') no-repeat;
+	background-size: 100%;
+	color: white;
+	user-select: none;
+	cursor: default;
+}
+
+.mid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hover:hover {
+	animation: bl 0.7s linear infinite;
+	color: aliceblue !important;
+}
+
+header {
+	height: 35px;
+	font-size: 18px;
+	font-family: anewhope;
+	color: #ffad00;
+	-webkit-app-region: drag;
+}
+
+main {
+	display: flex;
+	flex-flow: column;
+	padding: 0 20px;
+	font-size: 18px;
+	color: aliceblue;
+	flex: 1;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #9c9cf3;
+}
+
+.get-list {
+	color: #ffad00;
+	font-size: 26px;
+	padding-left: 5px;
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+	width: 440px;
+	height: 60px;
+	border: 3px solid #2d2d7b;
+	background: rgba(8, 0, 125, 0.6);
+	padding: 5px;
+}
+
+.filters .cell {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.filters .cell:first-child {
+	width: 50%;
+}
+
+.filters .filter {
+	display: flex;
+}
+
+.filters .val {
+	padding-left: 5px;
+}
+
+.filters .filter:hover .val {
+	animation: bl 0.7s linear infinite;
+	color: #9c9cf3;
+}
+
+.tr {
+	display: flex;
+	flex-flow: row;
+	flex: 0 0 auto;
+}
+
+.td {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+footer {
+	font-family: anewhope;
+	height: 40px;
+	flex: 0 0 auto;
+	font-size: 22px;
+}
+
+.exit {
+	color: #ffad00;
+}
+
+.nodrag {
+	-webkit-app-region: no-drag;
+}

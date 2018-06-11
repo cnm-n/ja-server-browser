@@ -1,0 +1,10 @@
+{
+  "name": "ja-server-browser",
+  "description": "Jedi academy server browser",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron app/main.js"
+  }
+}

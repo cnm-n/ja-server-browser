@@ -1,0 +1,92 @@
+.servers {
+	display: flex;
+	flex-flow: column;
+	flex: 1 0 0;
+	height: 100%;
+	overflow: hidden;
+	padding-top: 8px;
+}
+
+.servers .thead {
+	display: flex;
+	flex-flow: column;
+	flex: 0 0 auto;
+	padding: 0 13px 1px 3px;
+}
+
+.servers .thead .td {
+	font-size: 22px;
+	color: #ffad00;
+}
+
+.servers .thead .td:not(:first-child) {
+	padding-left: 10px;
+}
+
+.servers .tbody {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: rgba(127, 134, 255, 0.25);
+	overflow-y: scroll;
+	margin-bottom: 2px;
+	border: 3px solid #2d2d7b;
+}
+
+.servers .tbody:hover {
+	border: 3px solid #c9a338;
+}
+
+.servers .td {
+	padding-left: 5px;
+	height: 27px;
+}
+
+.servers .tbody .tr:nth-child(even) {
+	background: rgba(127, 134, 255, 0.15);
+}
+
+.servers .tbody .tr:hover {
+	background: rgba(255, 255, 255, 0.16);
+}
+
+.servers .tbody .td:not(:first-child) {
+	border-left: 5px solid #52548d;
+}
+
+.servers .name {
+	width: 60%;
+}
+
+.tbody .name {
+	justify-content: space-between;
+}
+
+.tbody .name div:first-child {
+	overflow: hidden;
+}
+
+.servers .images {
+	display: flex;
+}
+
+.servers .images div {
+	width: 25px;
+}
+
+.servers .images img {
+	display: block;
+}
+
+.servers .map {
+	width: 23%;
+}
+
+.servers .players {
+	width: 10%;
+}
+
+.servers .type {
+	width: 12%;
+}
